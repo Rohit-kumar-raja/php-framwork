@@ -9,11 +9,3 @@ include './methods/table.php';
 ?>
 
 
-<table border="1">
-    <thead>
-        <?php  thGen('migrations'); ?>
-    </thead>
-    <tbody>
-    <?php search_data('migrations','#') ?>
-    </tbody>
-</table>
