@@ -28,7 +28,7 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     $hostname = "localhost";
     $username = "root";
     $password = "";
-    $database = "breeze";
+    $database = "nsucms_cms";
 } else {
     // for server connection
     $hostname = "server host name";
