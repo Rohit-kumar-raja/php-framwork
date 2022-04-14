@@ -59,12 +59,11 @@ function tdGen($table_name,  $edit_url = '', $delete_url = '', $show_url = '', $
     if you want to display one 1 or 4 or 10 and any more simply pass all the table row into the table 
     th_array and into the td_array simply pass the table column name
 */
-function tableGen($table_name, $th_array, $td_array, $action = 'false', $edit_url = '', $delete_url = '', $show_url = '', $condition = 1)
+function tableGen($table_name, $th_array, $td_array, $id='id', $action = 'false', $edit_url = '', $delete_url = '', $show_url = '', $condition = 1)
 {
     global $conn;
     $sno = 1;
-    $id = 'admin_id';
-    $table_query = "SELECT  admin_id," . implode(',', $td_array) . " FROM `$table_name` WHERE $condition ";
+    $table_query = "SELECT  $id," . implode(',', $td_array) . " FROM `$table_name` WHERE $condition ";
     $table_result = mysqli_query($conn, $table_query);
     // this is the id of the table for goes into the next page
     $n = 0;
