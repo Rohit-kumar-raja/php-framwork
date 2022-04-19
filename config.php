@@ -1,4 +1,5 @@
 <?php
+
 /* making the connection for server and local both at time
  if you make the connection for server and local at time 
  does not need to go server and changer user name and password
